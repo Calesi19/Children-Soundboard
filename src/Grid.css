@@ -1,0 +1,69 @@
+h1 {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.grid {
+    
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 50px;
+    min-height: 100vh;
+    padding-bottom: 150px;
+    padding-top: 150px;
+  }
+  
+/* Center the columns in the grid. */
+
+.grid {
+    justify-content: center;
+  }
+  
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .grid {
+    background-color: green;
+  }
+
+  .grid.animals {
+    background-color: rgb(2, 150, 2);
+}
+
+.grid.instruments {
+  background-color: rgb(255, 168, 27);
+}
+
+.grid.transportation {
+  background-color: rgb(7, 127, 225);
+}
+
+.grid.fun {
+  background: linear-gradient(0deg, rgb(217, 27, 255) 0%,  rgba(255,27,236,1) 100%);
+}
+
+
+/* If width is less than 1200px, change the grid to 2 columns. */
+
+@media(max-width: 1200px) {
+    .grid {
+      grid-template-columns: 300px 300px;
+    }
+  }
+  
+  /* If width is less than 800px, change the grid to 1 column. */
+  
+  @media(max-width: 800px) {
+    .grid {
+      grid-template-columns: 300px;
+    }
+}

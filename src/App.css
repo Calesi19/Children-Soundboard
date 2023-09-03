@@ -1,0 +1,29 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column ;
+    gap: 0;
+}
+
+@font-face {
+    font-family: 'FingerPaint-Regular'; /* This name will be used in your components */
+  src: url('./fonts/FingerPaint-Regular.ttf') format('truetype'); /* URL relative to your CSS file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'LilitaOne-Regular'; /* This name will be used in your components */
+    src: url('./fonts/LilitaOne-Regular.ttf') format('truetype'); /* URL relative to your CSS file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    font-family: 'FingerPaint-Regular';
+}

@@ -1,0 +1,35 @@
+
+  
+  .carousel-item {
+    display: none;
+    width: 100%;
+    height: 100vh; 
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-button {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(22, 140, 236);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 70pt;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.095);
+    border-width: 3px;
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  

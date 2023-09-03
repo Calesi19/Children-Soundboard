@@ -1,0 +1,42 @@
+
+/* Square Tile with white background. Image and name of the tile are centered. */ 
+
+.tile {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(185, 185, 185);
+    border-width: 4px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tile:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* slightly less shadow on hover */
+}
+
+.tile:active {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* shadow is even less when pressed */
+    transform: translateY(6px); /* slight downward movement to simulate pressing */
+}
+
+.tile-name {
+    font-size: 25pt;
+    color: black;
+}
+
+.tile img {
+    width: 200px;
+    
+    object-fit: cover;
+}
+
